@@ -1,0 +1,212 @@
+(footprint "N7812-1C"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 1.75 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "1044e8b6-459f-4b47-b498-0004b37c4f0f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "N7812-1C"
+		(at 0 3.25 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "a43b8e60-d90b-4ce7-a9c6-4cfaa38f5cda")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 2.25 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "68768b1a-3b1e-4b9e-91c3-8791b685a52e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.meanwell.com/webapp/product/search.aspx?prod=N78"
+		(at 0 12 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "47423b95-43ae-4a51-9999-9f3afd90cd7b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Non Isolated Voltage Converter"
+		(at 0 10.25 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6c5c7cea-5041-484e-901d-797e89280daa")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -6 8.5)
+		(end -6 -0.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "6f27d445-9d41-4ade-80fb-45a195dc9c1c")
+	)
+	(fp_line
+		(start -5.5 -1)
+		(end 5.5 -1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "6d74f700-a64c-4406-b804-49de0393fb6a")
+	)
+	(fp_line
+		(start 5.5 9)
+		(end -5.5 9)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "259b2a2f-044e-4522-aee3-ca87938b1835")
+	)
+	(fp_line
+		(start 6 -0.5)
+		(end 6 8.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "72acf342-a46c-44b0-b6b1-7924e1b69b09")
+	)
+	(fp_arc
+		(start -6 -0.5)
+		(mid -5.853553 -0.853553)
+		(end -5.5 -1)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "93df4140-54f2-4491-859a-7ee517018692")
+	)
+	(fp_arc
+		(start -5.5 9)
+		(mid -5.853553 8.853553)
+		(end -6 8.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "97893d0a-57a4-4c4e-8ffd-d1f0adac6e32")
+	)
+	(fp_arc
+		(start 5.5 -1)
+		(mid 5.853553 -0.853553)
+		(end 6 -0.5)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "07a57bc4-491f-4326-ade9-516350907b49")
+	)
+	(fp_arc
+		(start 6 8.5)
+		(mid 5.853553 8.853553)
+		(end 5.5 9)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "998fe46d-c356-4c09-a476-70a26a75a4cb")
+	)
+	(fp_rect
+		(start -6.25 -1.25)
+		(end 6.25 9.25)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "164ba72e-e28e-4db8-ab0f-5faa4f43c905")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 4.75 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "2e89dbfb-9668-4ba9-b1a8-da250eaa23d8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at -2.54 0)
+		(size 1.5 1.5)
+		(drill 0.85)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "47f99239-affd-49d2-b23d-cf3dfca1bc08")
+	)
+	(pad "2" thru_hole circle
+		(at 0 0)
+		(size 1.5 1.5)
+		(drill 0.85)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "5d127b94-1f6e-4816-90c1-98ad20c16b4d")
+	)
+	(pad "3" thru_hole circle
+		(at 2.54 0)
+		(size 1.5 1.5)
+		(drill 0.85)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "655569e9-1029-43b6-8c5c-38e5dda8b86b")
+	)
+	(model "${KIPRJMOD}/3D Models/N7803-1C.stp"
+		(offset
+			(xyz -2.54 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

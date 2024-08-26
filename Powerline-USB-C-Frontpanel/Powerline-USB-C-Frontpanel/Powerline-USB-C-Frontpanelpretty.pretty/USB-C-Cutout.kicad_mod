@@ -1,0 +1,90 @@
+(footprint "USB-C-Cutout"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at -1.25 -18 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "dc55afd9-0ac5-4187-9a37-f69866c7ea90")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "USB-C-Cutout"
+		(at -1.25 -16.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "7e340d2c-c0ae-447e-b73e-38b5f759665f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at -1.25 -17.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5496dd35-f59b-42d9-a72e-ec9fdf523115")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at -1.25 -17.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "aafa3f03-060b-4dfe-8ab3-e7df3e795795")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at -1.25 -17.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "a222713a-0715-4083-9311-888b0ebcd4ef")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_text user "${REFERENCE}"
+		(at -1.25 -15 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "4742c2f3-c2e6-4656-9f66-81d81a778135")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole oval
+		(at 0 0.25 90)
+		(size 4.25 10)
+		(drill oval 3.25 9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c60a9ee9-ceab-4824-9aa5-460adce783c2")
+	)
+)

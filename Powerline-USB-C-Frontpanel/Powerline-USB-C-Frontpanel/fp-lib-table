@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Powerline-USB-C-Frontpanel")(type "KiCad")(uri "${KIPRJMOD}/Powerline-USB-C-Frontpanelpretty.pretty")(options "")(descr ""))
+)
