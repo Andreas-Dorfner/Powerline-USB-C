@@ -1,5 +1,5 @@
 # Powerline-USB-C
-Powerline is a small 3HP Front Entry USB C power supply.
+Powerline is a small 3HP Front Entry USB C eurorack power supply.
 ## Repository Layout
 The Frontpanel and Main PCB each have a Kicad project with footprint and symbol libraries.
 ## Specs
