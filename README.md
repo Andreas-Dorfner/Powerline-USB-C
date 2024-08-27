@@ -25,7 +25,7 @@ You also need two M2 5mm standoffs and 4 M2 screws that fit the standoffs (max. 
 |C3, C5, C7|1210 22uF 25V X7R|Output cap for the regulator|
 |D1|3mm LED|3mm radial LED with a nice color|
 |J1|Molex-2171780001|I selected this because of its very good availability. You can even look at the Molex website to see where there is stock!|
-|J2, J3|Power header|A 02x08 2.54mm pin spacing vertical through hole pin header, do yourself a favor and get a keyed one|
+|J2|Power header|A 02x08 2.54mm pin spacing vertical through hole pin header, do yourself a favor and get a keyed one|
 |L1|1210 10uH|Look out for a rated current of above 600mA|
 |R1|0603 1k|Current limiting resistor for the CH224Ks Powersupply|
 |R2|0603 5k1|Current limiting resistor for the LED: if it's too bright, pick a higher resistance.|
