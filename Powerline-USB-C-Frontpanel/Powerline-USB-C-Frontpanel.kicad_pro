@@ -472,9 +472,9 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "Powerline-USB-C-Frontpanel.step",
       "svg": "",
-      "vrml": ""
+      "vrml": "Powerline-USB-C-Frontpanel.wrl"
     },
     "page_layout_descr_file": ""
   },

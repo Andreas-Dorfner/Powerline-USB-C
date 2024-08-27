@@ -489,9 +489,9 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "Powerline-USB-C.step",
       "svg": "",
-      "vrml": ""
+      "vrml": "Powerline-USB-C.wrl"
     },
     "page_layout_descr_file": ""
   },
