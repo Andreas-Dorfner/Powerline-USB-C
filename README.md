@@ -21,8 +21,8 @@ You also need two M2 5mm standoffs and 4 M2 screws that fit the standoffs (max. 
 |Part Number|Value|Information|
 |---|---|---|
 |C1|0805 1uF 50V X7R|Decoupling Capacitor for the CH224K|
-|C2, C4|1210 10uF 50V X7R|Input Cap for the regulator|
-|C3, C5|1210 22uF 25V X7R|Output cap for the regulator|
+|C2, C4, C6|1210 10uF 50V X7R|Input Cap for the regulator|
+|C3, C5, C7|1210 22uF 25V X7R|Output cap for the regulator|
 |D1|3mm LED|3mm radial LED with a nice color|
 |J1|Molex-2171780001|I selected this because of its very good availability. You can even look at the Molex website to see where there is stock!|
 |J2, J3|Power header|A 02x08 2.54mm pin spacing vertical through hole pin header, do yourself a favor and get a keyed one|
