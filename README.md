@@ -1,6 +1,6 @@
 # Powerline-USB-C
 Powerline is a small 3HP Front Entry USB C Eurorack power supply.
-![Alt text](Powerline-USB-C/Powerline-USB-C.svg?raw=true "Schematic")
+![Alt text](Powerline-USB-C/3D-Powerline-USB-C.png?raw=true "3D render")
 ## Repository Layout
 The Frontpanel and main PCB have a Kicad project with footprint and symbol libraries.
 The main PCB also includes a 3D render of the Frontpanel as a Footprint
@@ -17,6 +17,7 @@ The PCBs are designed to jlcpcbs 2 Layer design capabilities to be compatible wi
 The only difficult-to-source parts are the USB-C connector and regulator ICs. I got both from Digikey.
 I also recommend sourcing the CH224k from a reputable supplier like LCSC to avoid broken parts.
 You also need two M2 5mm standoffs and 4 M2 screws that fit the standoffs (max. 4mm) to assemble the Module.
+![Alt text](Powerline-USB-C/Powerline-USB-C.svg?raw=true "Schematic")
 |Part Number|Value|Information|
 |---|---|---|
 |C1|0805 1uF 50V X7R|Decoupling Capacitor for the CH224K|
@@ -32,5 +33,4 @@ You also need two M2 5mm standoffs and 4 M2 screws that fit the standoffs (max. 
 |U2, U3|N7912-1C|+/-12V regulators|
 |U4|N7805-1C|5V regulator|
 ## Build guide
-![Alt text](Powerline-USB-C/3D-Powerline-USB-C.png?raw=true "3D render")
 TODO
