@@ -6,8 +6,8 @@
 	(paper "A5")
 	(title_block
 		(title "Powerlin-USB-C")
-		(date "2024-08-26")
-		(rev "0.1")
+		(date "2024-08-27")
+		(rev "0.2")
 	)
 	(lib_symbols
 		(symbol "Device:C"
@@ -695,6 +695,175 @@
 				)
 			)
 		)
+		(symbol "Powerline-USB-C:16pin_Power_connector"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at -2.794 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Powerline-USB-C:Keyed_16pin_Powerheader"
+				(at 0 -6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "16pin_Power_connector_1_1"
+				(rectangle
+					(start -5.842 10.16)
+					(end 0 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at 2.54 -3.81 180)
+					(length 2.54)
+					(name "-12V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 -1.27 180)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 1.27 180)
+					(length 2.54)
+					(name "12V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 2.54 3.81 180)
+					(length 2.54)
+					(name "5V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 2.54 6.35 180)
+					(length 2.54)
+					(name "CV"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 2.54 8.89 180)
+					(length 2.54)
+					(name "Gate"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Powerline-USB-C:CH224K"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -938,393 +1107,6 @@
 					(at 8.89 2.54 180)
 					(length 2.54)
 					(name "CFG1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Powerline-USB-C:Eurorack 10pin Power Connector"
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Eurorack 10pin Power Connector"
-				(at 1.27 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Powerline-USB-C:Eurorack shrouded 10 pin SMD header"
-				(at 0 -12.446 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 -11.176 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 -9.652 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_2x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Eurorack 10pin Power Connector_1_1"
-				(rectangle
-					(start -2.54 -4.953)
-					(end -1.27 -5.207)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.54 -2.413)
-					(end -1.27 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.54 0.127)
-					(end -1.27 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.54 2.667)
-					(end -1.27 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.54 5.207)
-					(end -1.27 4.953)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.54 6.35)
-					(end 2.54 -6.35)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(rectangle
-					(start 2.54 -4.953)
-					(end 1.27 -5.207)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 2.54 -2.413)
-					(end 1.27 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 2.54 0.127)
-					(end 1.27 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 2.54 2.667)
-					(end 1.27 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 2.54 5.207)
-					(end 1.27 4.953)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "+"
-					(at 0 -5.08 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(text "-"
-					(at 0 5.08 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(pin passive line
-					(at -6.35 5.08 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 6.35 -5.08 180)
-					(length 3.81)
-					(name "Pin_10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 6.35 5.08 180)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -6.35 2.54 0)
-					(length 3.81)
-					(name "Pin_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 6.35 2.54 180)
-					(length 3.81)
-					(name "Pin_4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -6.35 0 0)
-					(length 3.81)
-					(name "Pin_5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 6.35 0 180)
-					(length 3.81)
-					(name "Pin_6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -6.35 -2.54 0)
-					(length 3.81)
-					(name "Pin_7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 6.35 -2.54 180)
-					(length 3.81)
-					(name "Pin_8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -6.35 -5.08 0)
-					(length 3.81)
-					(name "Pin_9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2169,6 +1951,126 @@
 				)
 			)
 		)
+		(symbol "power:+5V"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+5V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+5V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+5V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+5V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:-12V"
 			(power)
 			(pin_numbers hide)
@@ -2585,22 +2487,16 @@
 		(uuid "270c22d4-a498-46db-8a35-548eb87a67e2")
 	)
 	(junction
-		(at 36.83 72.39)
+		(at 176.53 22.86)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2d602fd3-6fd2-47a9-903f-26ab680a0b53")
+		(uuid "456a84f4-1b93-47b1-a4e6-f16c567cfc99")
 	)
 	(junction
-		(at 71.12 72.39)
+		(at 158.75 22.86)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3648ec00-43d0-43e0-9ae8-fa98366f3750")
-	)
-	(junction
-		(at 58.42 72.39)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "51fbf592-7687-4a88-b9b2-4c842f2057c8")
+		(uuid "7483d1df-0a77-44ac-b724-31dc98b64239")
 	)
 	(junction
 		(at 31.75 22.86)
@@ -2619,12 +2515,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d3b64066-0ae7-4cd7-b5cd-8b722ae5ca4b")
-	)
-	(junction
-		(at 24.13 72.39)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f7bde4e8-799d-4361-b505-d273aacf5408")
 	)
 	(junction
 		(at 135.89 31.75)
@@ -2651,7 +2541,7 @@
 		(uuid "ff817cf7-b834-4b8f-b75c-128eab983cf8")
 	)
 	(no_connect
-		(at 88.9 86.36)
+		(at 41.91 86.36)
 		(uuid "2bd8d8f3-0a03-4bb5-9c48-7c4432930cc2")
 	)
 	(no_connect
@@ -2667,8 +2557,16 @@
 		(uuid "46170088-f69e-4155-8ad8-dbfe895928ce")
 	)
 	(no_connect
+		(at 22.86 68.58)
+		(uuid "4c903962-9974-4526-b399-f0950f7d9371")
+	)
+	(no_connect
 		(at 30.48 38.1)
 		(uuid "5a9d47c4-e037-4358-b0a6-cfba80a6180e")
+	)
+	(no_connect
+		(at 22.86 66.04)
+		(uuid "6ccf743f-ba02-41c8-99e7-a04b10118256")
 	)
 	(no_connect
 		(at 59.69 25.4)
@@ -2679,7 +2577,7 @@
 		(uuid "c400b465-0726-425d-a9a2-fd59b2b8b8b9")
 	)
 	(no_connect
-		(at 88.9 62.23)
+		(at 41.91 62.23)
 		(uuid "cff3a389-b06f-472e-8e76-d853e6a1df89")
 	)
 	(no_connect
@@ -2728,16 +2626,6 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 72.39) (xy 58.42 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "15474216-99db-492f-94e2-2f838d93596d")
-	)
-	(wire
-		(pts
 			(xy 31.75 21.59) (xy 31.75 22.86)
 		)
 		(stroke
@@ -2745,6 +2633,16 @@
 			(type default)
 		)
 		(uuid "1b2021e9-38d2-4d51-89cd-8c448c71a26a")
+	)
+	(wire
+		(pts
+			(xy 26.67 71.12) (xy 22.86 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c4230cc-b913-4af7-9113-70824141115a")
 	)
 	(wire
 		(pts
@@ -2788,6 +2686,16 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 22.86) (xy 160.02 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35179067-1c90-416b-936d-7952aef96ed0")
+	)
+	(wire
+		(pts
 			(xy 135.89 30.48) (xy 135.89 31.75)
 		)
 		(stroke
@@ -2808,16 +2716,6 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 72.39) (xy 24.13 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f565e88-a1d1-4f61-8704-55f8529a9d5c")
-	)
-	(wire
-		(pts
 			(xy 33.02 22.86) (xy 31.75 22.86)
 		)
 		(stroke
@@ -2825,16 +2723,6 @@
 			(type default)
 		)
 		(uuid "53ec2156-351b-4333-8ff0-1430e81bd95c")
-	)
-	(wire
-		(pts
-			(xy 36.83 72.39) (xy 36.83 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5a2ad2d3-f56e-4902-a7ae-7482ca8c43b9")
 	)
 	(wire
 		(pts
@@ -2885,26 +2773,6 @@
 			(type default)
 		)
 		(uuid "6e7ea711-0a73-4280-9b1a-c09f6d36ee46")
-	)
-	(wire
-		(pts
-			(xy 36.83 69.85) (xy 36.83 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7e9c05fb-3ffc-4172-9328-0908a87ef5f5")
-	)
-	(wire
-		(pts
-			(xy 58.42 69.85) (xy 58.42 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "85a9c967-e6d5-4271-97a2-a769ec94d55e")
 	)
 	(wire
 		(pts
@@ -2998,6 +2866,26 @@
 	)
 	(wire
 		(pts
+			(xy 158.75 22.86) (xy 158.75 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a182f9cc-a2bf-49d8-a019-34a7a3a897b4")
+	)
+	(wire
+		(pts
+			(xy 158.75 21.59) (xy 158.75 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9bbe372-421a-4722-8c72-85f397d5d1f6")
+	)
+	(wire
+		(pts
 			(xy 127 21.59) (xy 127 22.86)
 		)
 		(stroke
@@ -3018,13 +2906,13 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 72.39) (xy 71.12 74.93)
+			(xy 31.75 73.66) (xy 22.86 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bb622897-3213-48b6-b046-4af4bc841764")
+		(uuid "bc5da94e-7e6d-43e9-bbb0-824ec014eb8a")
 	)
 	(wire
 		(pts
@@ -3035,6 +2923,26 @@
 			(type default)
 		)
 		(uuid "c224e65b-1b54-4923-8719-45276a77c6f8")
+	)
+	(wire
+		(pts
+			(xy 22.86 76.2) (xy 27.94 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c793d244-67d2-4574-8d7f-3e6445e33e18")
+	)
+	(wire
+		(pts
+			(xy 175.26 22.86) (xy 176.53 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9ff53a6-f21f-4e88-8b17-5abeed6ed8f6")
 	)
 	(wire
 		(pts
@@ -3068,13 +2976,13 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 69.85) (xy 71.12 72.39)
+			(xy 31.75 71.12) (xy 31.75 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e0300a1e-fe1a-4b27-a3ec-1f30cccbb59b")
+		(uuid "d934f38f-2031-4bef-af0e-d154539ed36b")
 	)
 	(wire
 		(pts
@@ -3128,13 +3036,13 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 69.85) (xy 24.13 72.39)
+			(xy 176.53 21.59) (xy 176.53 22.86)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ed70d873-5d4d-4846-9e5d-e5954b63681f")
+		(uuid "e9cbc66a-4ae7-4185-9641-038acb869b1f")
 	)
 	(wire
 		(pts
@@ -3145,6 +3053,16 @@
 			(type default)
 		)
 		(uuid "f17e4714-806e-4966-9764-98fb0aca6290")
+	)
+	(wire
+		(pts
+			(xy 176.53 22.86) (xy 176.53 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f31af348-7760-4d66-8f88-614ea2ea6c63")
 	)
 	(wire
 		(pts
@@ -3168,6 +3086,16 @@
 	)
 	(wire
 		(pts
+			(xy 27.94 76.2) (xy 27.94 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9da7743-2965-4f62-b044-44e368a0e45e")
+	)
+	(wire
+		(pts
 			(xy 71.12 21.59) (xy 71.12 22.86)
 		)
 		(stroke
@@ -3178,7 +3106,7 @@
 	)
 	(rectangle
 		(start 12.7 54.61)
-		(end 82.55 88.9)
+		(end 35.56 88.9)
 		(stroke
 			(width 0)
 			(type default)
@@ -3189,8 +3117,8 @@
 		(uuid 0763812b-63bd-4983-b6d0-3953126ce486)
 	)
 	(rectangle
-		(start 83.82 54.61)
-		(end 111.76 88.9)
+		(start 36.83 54.61)
+		(end 64.77 88.9)
 		(stroke
 			(width 0)
 			(type default)
@@ -3202,7 +3130,7 @@
 	)
 	(rectangle
 		(start 80.01 12.7)
-		(end 149.86 53.34)
+		(end 185.42 53.34)
 		(stroke
 			(width 0)
 			(type default)
@@ -3213,8 +3141,8 @@
 		(uuid 5eee7b0f-619f-4f77-8bca-1be5b57d401a)
 	)
 	(rectangle
-		(start 113.03 54.61)
-		(end 127 88.9)
+		(start 66.04 54.61)
+		(end 80.01 88.9)
 		(stroke
 			(width 0)
 			(type default)
@@ -3274,6 +3202,16 @@
 		)
 		(uuid "578a66fd-92e5-499b-a3e5-08f766242708")
 	)
+	(text "25V"
+		(exclude_from_sim no)
+		(at 181.61 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "16f32ed7-12e2-4b6e-8341-a7119e419871")
+	)
 	(text "50V\n"
 		(exclude_from_sim no)
 		(at 121.92 31.75 0)
@@ -3313,6 +3251,151 @@
 			)
 		)
 		(uuid "41cd4ce8-17b0-4992-ba2b-7641639c790b")
+	)
+	(text "50V\n"
+		(exclude_from_sim no)
+		(at 153.67 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "9279bc3b-dc3d-4a67-acf3-add8f555b675")
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 176.53 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "000a3f9d-59db-414d-9897-b1d7b575eeb5")
+		(property "Reference" "C7"
+			(at 179.07 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22uF"
+			(at 179.07 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+			(at 177.4952 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 176.53 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 176.53 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4101c807-7d18-4040-897d-e8ede84e2be5")
+		)
+		(pin "1"
+			(uuid "da5dae11-523e-4542-96c7-adc741c9835d")
+		)
+		(instances
+			(project "Powerline-USB-C"
+				(path "/63579326-1374-4d55-afd6-ecc78ea0a535"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:-12V")
+		(at 22.86 78.74 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "01ce1a70-1802-44af-9cb5-b4a65a4e1677")
+		(property "Reference" "#PWR016"
+			(at 22.86 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "-12V"
+			(at 22.86 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 22.86 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 22.86 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"-12V\""
+			(at 22.86 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "39122f67-7547-40cd-a1ec-89ac5a03d7dc")
+		)
+		(instances
+			(project ""
+				(path "/63579326-1374-4d55-afd6-ecc78ea0a535"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -3659,6 +3742,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 167.64 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "20a1dbe7-7b83-480e-a86c-981a5c7b388e")
+		(property "Reference" "#PWR022"
+			(at 167.64 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 167.64 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 167.64 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 167.64 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 167.64 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "43f09964-6892-4039-a656-b7c61e415489")
+		)
+		(instances
+			(project "Powerline-USB-C"
+				(path "/63579326-1374-4d55-afd6-ecc78ea0a535"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 135.89 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3784,74 +3933,6 @@
 			(project "Powerline-USB-C"
 				(path "/63579326-1374-4d55-afd6-ecc78ea0a535"
 					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:-12V")
-		(at 24.13 67.31 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "28d29e02-d38a-4ec6-8d30-cdee8699bfb8")
-		(property "Reference" "#PWR016"
-			(at 27.94 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "-12V"
-			(at 20.32 67.3099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 24.13 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 24.13 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"-12V\""
-			(at 24.13 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ccb4ede0-5fb2-4b65-afa0-7c8e153c87f5")
-		)
-		(instances
-			(project "Powerline-USB-C"
-				(path "/63579326-1374-4d55-afd6-ecc78ea0a535"
-					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -4021,7 +4102,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 120.65 63.5 0)
+		(at 73.66 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4030,7 +4111,7 @@
 		(fields_autoplaced yes)
 		(uuid "3e0cc10b-e43e-47d0-ab08-1e8a0b0059a7")
 		(property "Reference" "#PWR028"
-			(at 120.65 67.31 0)
+			(at 73.66 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4039,7 +4120,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 120.65 58.42 0)
+			(at 73.66 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4047,7 +4128,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 120.65 63.5 0)
+			(at 73.66 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4056,7 +4137,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 63.5 0)
+			(at 73.66 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4065,7 +4146,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 120.65 63.5 0)
+			(at 73.66 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4220,142 +4301,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+12V")
-		(at 24.13 77.47 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4b43a371-22b2-4877-b2a9-c6a5e88c91ec")
-		(property "Reference" "#PWR018"
-			(at 27.94 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V"
-			(at 20.32 77.4699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 24.13 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 24.13 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 24.13 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "15cdc60b-67cf-4e1b-ba49-efe48a510b50")
-		)
-		(instances
-			(project "Powerline-USB-C"
-				(path "/63579326-1374-4d55-afd6-ecc78ea0a535"
-					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 71.12 72.39 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5264fa3f-46b0-4526-83b7-9e3597c69b05")
-		(property "Reference" "#PWR026"
-			(at 77.47 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 74.93 72.3899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 71.12 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 71.12 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 71.12 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ef5dde19-17dc-415a-bec6-587b41b1f47c")
-		)
-		(instances
-			(project "Powerline-USB-C"
-				(path "/63579326-1374-4d55-afd6-ecc78ea0a535"
-					(reference "#PWR026")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 88.9 59.69 0)
+		(at 41.91 59.69 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -4364,7 +4311,7 @@
 		(fields_autoplaced yes)
 		(uuid "54e93692-d01a-4343-9ee0-e10876630c64")
 		(property "Reference" "H1"
-			(at 91.44 57.1499 0)
+			(at 44.45 57.1499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4373,7 +4320,7 @@
 			)
 		)
 		(property "Value" "m2 mounting hole"
-			(at 91.44 59.6899 0)
+			(at 44.45 59.6899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4382,7 +4329,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
-			(at 88.9 59.69 0)
+			(at 41.91 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4391,7 +4338,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 88.9 59.69 0)
+			(at 41.91 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4400,7 +4347,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 88.9 59.69 0)
+			(at 41.91 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4421,75 +4368,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 24.13 72.39 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "583967fb-935a-4f46-ad73-8641db626a12")
-		(property "Reference" "#PWR017"
-			(at 17.78 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 20.32 72.3899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 24.13 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 24.13 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 24.13 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c8cacbed-c0f1-406e-9bfa-5854e86aac6d")
-		)
-		(instances
-			(project "Powerline-USB-C"
-				(path "/63579326-1374-4d55-afd6-ecc78ea0a535"
-					(reference "#PWR017")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
-		(at 120.65 74.93 180)
+		(at 73.66 74.93 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4497,7 +4377,7 @@
 		(dnp no)
 		(uuid "63679964-41dd-4440-8476-3190df603fcc")
 		(property "Reference" "R2"
-			(at 116.84 73.66 0)
+			(at 69.85 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4505,7 +4385,7 @@
 			)
 		)
 		(property "Value" "5.1k"
-			(at 116.84 76.2 0)
+			(at 69.85 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4513,7 +4393,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 122.428 74.93 90)
+			(at 75.438 74.93 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4522,7 +4402,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 120.65 74.93 0)
+			(at 73.66 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4531,7 +4411,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 120.65 74.93 0)
+			(at 73.66 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4623,74 +4503,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:-12V")
-		(at 71.12 67.31 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "662208a5-357f-4b71-8248-ba5fcea5e131")
-		(property "Reference" "#PWR025"
-			(at 67.31 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "-12V"
-			(at 74.93 67.3099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 71.12 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 71.12 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"-12V\""
-			(at 71.12 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "eb578e08-edd1-4df0-ade9-462c9c54ce24")
-		)
-		(instances
-			(project "Powerline-USB-C"
-				(path "/63579326-1374-4d55-afd6-ecc78ea0a535"
-					(reference "#PWR025")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 33.02 22.86 270)
 		(unit 1)
@@ -4760,7 +4572,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 120.65 78.74 0)
+		(at 73.66 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4769,7 +4581,7 @@
 		(fields_autoplaced yes)
 		(uuid "6cd10fc2-c57b-4b50-a5d3-cd144e723372")
 		(property "Reference" "#PWR029"
-			(at 120.65 85.09 0)
+			(at 73.66 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4778,7 +4590,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 120.65 83.82 0)
+			(at 73.66 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4786,7 +4598,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 120.65 78.74 0)
+			(at 73.66 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4795,7 +4607,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 78.74 0)
+			(at 73.66 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4804,7 +4616,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 120.65 78.74 0)
+			(at 73.66 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4892,16 +4704,15 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 71.12 77.47 270)
+		(at 31.75 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "721094ab-5035-456a-9604-fe43be9ec5a7")
-		(property "Reference" "#PWR027"
-			(at 67.31 77.47 0)
+		(uuid "6e59d307-4544-4472-90fa-cfaaea150563")
+		(property "Reference" "#PWR018"
+			(at 31.75 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4910,16 +4721,15 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 74.93 77.4699 90)
+			(at 31.75 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 71.12 77.47 0)
+			(at 31.75 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4928,7 +4738,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 71.12 77.47 0)
+			(at 31.75 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4937,7 +4747,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 71.12 77.47 0)
+			(at 31.75 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4946,12 +4756,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "c1d88a1a-6be1-42ab-8e7b-590f76884e11")
+			(uuid "181d6465-286e-4937-bd22-3df17c783b2b")
 		)
 		(instances
-			(project "Powerline-USB-C"
+			(project ""
 				(path "/63579326-1374-4d55-afd6-ecc78ea0a535"
-					(reference "#PWR027")
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)
@@ -5024,8 +4834,74 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 176.53 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "72e65d9b-8254-4543-8032-08af074cabe1")
+		(property "Reference" "#PWR024"
+			(at 176.53 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 176.53 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 176.53 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 176.53 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 176.53 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "25c037f8-e6b3-4c9b-8de4-098927c96e9e")
+		)
+		(instances
+			(project "Powerline-USB-C"
+				(path "/63579326-1374-4d55-afd6-ecc78ea0a535"
+					(reference "#PWR024")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
-		(at 120.65 67.31 90)
+		(at 73.66 67.31 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5033,7 +4909,7 @@
 		(dnp no)
 		(uuid "75e3e273-4b61-4022-a0b7-44de85341a23")
 		(property "Reference" "D1"
-			(at 116.84 66.04 90)
+			(at 69.85 66.04 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5041,7 +4917,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 116.84 68.8975 90)
+			(at 69.85 68.8975 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5049,7 +4925,7 @@
 			)
 		)
 		(property "Footprint" "LED_THT:LED_D3.0mm"
-			(at 120.65 67.31 0)
+			(at 73.66 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5058,7 +4934,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 120.65 67.31 0)
+			(at 73.66 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5067,7 +4943,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 120.65 67.31 0)
+			(at 73.66 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5085,6 +4961,72 @@
 			(project ""
 				(path "/63579326-1374-4d55-afd6-ecc78ea0a535"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 176.53 21.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7b08c6ba-899e-46e8-9f3f-1e00281f4a35")
+		(property "Reference" "#PWR023"
+			(at 176.53 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 176.53 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 176.53 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 176.53 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 176.53 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "15632e8f-4cf8-40d5-9b76-ca0dbcea8c13")
+		)
+		(instances
+			(project "Powerline-USB-C"
+				(path "/63579326-1374-4d55-afd6-ecc78ea0a535"
+					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -5172,6 +5114,72 @@
 			(project ""
 				(path "/63579326-1374-4d55-afd6-ecc78ea0a535"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 158.75 21.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "82a1bf18-2d73-4e02-8752-b3e2ff51ff14")
+		(property "Reference" "#PWR020"
+			(at 158.75 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 158.75 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.75 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 158.75 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c436e69d-283f-4435-8eea-63c24533ad67")
+		)
+		(instances
+			(project "Powerline-USB-C"
+				(path "/63579326-1374-4d55-afd6-ecc78ea0a535"
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -5380,6 +5388,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 27.94 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "93560266-c28b-4f7d-b3af-bb17e1c08f33")
+		(property "Reference" "#PWR017"
+			(at 27.94 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 27.94 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 27.94 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 27.94 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8164f216-1024-44a8-921d-eb495fb2ace2")
+		)
+		(instances
+			(project ""
+				(path "/63579326-1374-4d55-afd6-ecc78ea0a535"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 97.79 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5439,6 +5513,72 @@
 			(project "Powerline-USB-C"
 				(path "/63579326-1374-4d55-afd6-ecc78ea0a535"
 					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 158.75 31.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9c86117a-973f-475b-8396-688cb50ca5d8")
+		(property "Reference" "#PWR021"
+			(at 158.75 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 158.75 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.75 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 158.75 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 158.75 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "08aaa143-d0c2-4533-b814-71e50f124355")
+		)
+		(instances
+			(project "Powerline-USB-C"
+				(path "/63579326-1374-4d55-afd6-ecc78ea0a535"
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -5638,165 +5778,6 @@
 			(project "Powerline-USB-C"
 				(path "/63579326-1374-4d55-afd6-ecc78ea0a535"
 					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Powerline-USB-C:Eurorack 10pin Power Connector")
-		(at 30.48 72.39 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ad4f9912-379f-45a8-a1ee-98381191e61b")
-		(property "Reference" "J2"
-			(at 30.48 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Eurorack 10pin Power Connector"
-			(at 30.48 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Powerline-USB-C:Eurorack shrouded 10 pin SMD header"
-			(at 30.48 84.836 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 30.48 83.566 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 30.48 82.042 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "d5c0c90d-eaaf-4156-8ce0-0c86121c20af")
-		)
-		(pin "10"
-			(uuid "9a17287a-4c9f-4e73-8989-09f47a3858a8")
-		)
-		(pin "7"
-			(uuid "4769a983-b488-4b82-bf32-be8805532bf1")
-		)
-		(pin "9"
-			(uuid "9903adad-034e-48d2-b344-957b47f89825")
-		)
-		(pin "1"
-			(uuid "eafd4807-bc6e-496a-a92b-6193c3fa0013")
-		)
-		(pin "5"
-			(uuid "a8362230-3248-4f85-adb2-538206ec711c")
-		)
-		(pin "6"
-			(uuid "93c6e0f5-b308-4036-a630-3f2d4430060e")
-		)
-		(pin "8"
-			(uuid "4c11b22f-dc69-40ae-8c9d-409e641a5529")
-		)
-		(pin "3"
-			(uuid "1217afe3-7d93-43e0-9cba-2a673b1332cd")
-		)
-		(pin "2"
-			(uuid "195515db-1d6c-49da-9b6e-9a94a265a916")
-		)
-		(instances
-			(project ""
-				(path "/63579326-1374-4d55-afd6-ecc78ea0a535"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 58.42 72.39 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "af18a619-bd1a-4a4f-9296-5c162946eaa7")
-		(property "Reference" "#PWR023"
-			(at 52.07 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 54.61 72.3899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 58.42 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 58.42 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 58.42 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8fd36dca-dbbe-482d-851a-80071a000c63")
-		)
-		(instances
-			(project "Powerline-USB-C"
-				(path "/63579326-1374-4d55-afd6-ecc78ea0a535"
-					(reference "#PWR023")
 					(unit 1)
 				)
 			)
@@ -6006,35 +5987,33 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+12V")
-		(at 58.42 77.47 90)
+		(lib_id "Powerline-USB-C:16pin_Power_connector")
+		(at 20.32 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b87baad2-7fff-4e97-a4a7-b07acd4d403c")
-		(property "Reference" "#PWR024"
-			(at 62.23 77.47 0)
+		(uuid "b7585a82-03c6-42e6-a8c5-b094bc00823a")
+		(property "Reference" "J2"
+			(at 17.399 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Value" "+12V"
-			(at 54.61 77.4699 90)
+		(property "Value" "~"
+			(at 17.399 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 58.42 77.47 0)
+		(property "Footprint" "Powerline-USB-C:Keyed_16pin_Powerheader"
+			(at 20.32 81.788 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6043,7 +6022,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 77.47 0)
+			(at 20.32 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6051,49 +6030,53 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 58.42 77.47 0)
+		(property "Description" ""
+			(at 20.32 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "6"
+			(uuid "5965a94a-c083-4a0c-a3fc-8cc1ab5b3db9")
+		)
+		(pin "2"
+			(uuid "e227c3ce-2af8-44ad-87d2-0feae2c66122")
+		)
+		(pin "3"
+			(uuid "0c91f94d-46b2-4871-8f02-c265442098a3")
+		)
+		(pin "5"
+			(uuid "c0c8e39f-4172-404a-bcb1-a21cc7ac6292")
 		)
 		(pin "1"
-			(uuid "f279fd3d-7401-4f0b-97bd-46a050d111d6")
+			(uuid "2e042e09-47f7-4642-98f5-f4182f172ea4")
+		)
+		(pin "4"
+			(uuid "2a4f7c70-5d1b-4748-b904-b840ded26d31")
 		)
 		(instances
-			(project "Powerline-USB-C"
+			(project ""
 				(path "/63579326-1374-4d55-afd6-ecc78ea0a535"
-					(reference "#PWR024")
+					(reference "J2")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:-12V")
-		(at 36.83 67.31 270)
-		(mirror x)
+		(lib_id "Device:C")
+		(at 158.75 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b8d3d158-e637-4790-80ab-0de3cf5f7184")
-		(property "Reference" "#PWR019"
-			(at 33.02 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "-12V"
-			(at 40.64 67.3099 90)
+		(uuid "c96832b5-80a9-4ebd-9ae6-d03f7d43c10d")
+		(property "Reference" "C6"
+			(at 153.67 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6101,8 +6084,86 @@
 				(justify left)
 			)
 		)
+		(property "Value" "10uF"
+			(at 151.13 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+			(at 159.7152 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 158.75 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4a3d23a2-16dd-4381-b4ac-b79076cae51f")
+		)
+		(pin "1"
+			(uuid "c52c7d79-2a01-4f1e-8755-f2de6052914e")
+		)
+		(instances
+			(project "Powerline-USB-C"
+				(path "/63579326-1374-4d55-afd6-ecc78ea0a535"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 26.67 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d97fdf80-0f8f-438d-b4ed-5fa148f2b953")
+		(property "Reference" "#PWR019"
+			(at 26.67 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 26.67 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Footprint" ""
-			(at 36.83 67.31 0)
+			(at 26.67 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6111,7 +6172,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 36.83 67.31 0)
+			(at 26.67 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6119,8 +6180,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"-12V\""
-			(at 36.83 67.31 0)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 26.67 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6129,79 +6190,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "179283f8-78fb-4e72-963c-9f3b5c00a951")
+			(uuid "31145c24-9eb9-4c87-86b6-2e654a4714c1")
 		)
 		(instances
-			(project "Powerline-USB-C"
+			(project ""
 				(path "/63579326-1374-4d55-afd6-ecc78ea0a535"
 					(reference "#PWR019")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+12V")
-		(at 36.83 77.47 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c253b9f4-0b03-4dc2-b835-596baad5a32b")
-		(property "Reference" "#PWR021"
-			(at 33.02 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V"
-			(at 40.64 77.4699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 36.83 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 36.83 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 36.83 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "22ad0b27-9cd4-4a0b-8376-72945d4e7061")
-		)
-		(instances
-			(project "Powerline-USB-C"
-				(path "/63579326-1374-4d55-afd6-ecc78ea0a535"
-					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -6279,17 +6273,33 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 36.83 72.39 90)
+		(lib_id "Powerline-USB-C:N7812-1C")
+		(at 167.64 22.86 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e0a7e3b9-7464-48d8-b4c8-fa08b7c9d383")
-		(property "Reference" "#PWR020"
-			(at 43.18 72.39 0)
+		(uuid "ec855f99-3c9d-42e6-b3b0-82f2d737cd27")
+		(property "Reference" "U4"
+			(at 167.64 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "N7805-1C"
+			(at 167.64 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Powerline-USB-C:N7812-1C"
+			(at 167.64 15.494 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6297,17 +6307,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 40.64 72.3899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 36.83 72.39 0)
+		(property "Datasheet" "https://www.meanwell.com/webapp/product/search.aspx?prod=N78"
+			(at 167.64 13.462 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6315,17 +6316,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 36.83 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 36.83 72.39 0)
+		(property "Description" "Non Isolated Voltage Regulator"
+			(at 167.64 11.684 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6334,80 +6326,18 @@
 			)
 		)
 		(pin "1"
-			(uuid "d529e3c4-29ee-4ed4-b5b6-fa3447d026c5")
+			(uuid "57a74fc9-f879-4cb6-a931-16d7ef2360aa")
+		)
+		(pin "2"
+			(uuid "4ef6e2a9-c4fa-4a8f-bcf3-74ebd094e8e2")
+		)
+		(pin "3"
+			(uuid "598d12d0-8cd2-4b41-8bec-01b53658443b")
 		)
 		(instances
 			(project "Powerline-USB-C"
 				(path "/63579326-1374-4d55-afd6-ecc78ea0a535"
-					(reference "#PWR020")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:-12V")
-		(at 58.42 67.31 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e248bd7c-6d33-4b35-a6a4-c196aa316b96")
-		(property "Reference" "#PWR022"
-			(at 62.23 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "-12V"
-			(at 54.61 67.3099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 58.42 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 58.42 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"-12V\""
-			(at 58.42 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5e68b540-9053-41f9-b0b3-3cc7042d7dd2")
-		)
-		(instances
-			(project "Powerline-USB-C"
-				(path "/63579326-1374-4d55-afd6-ecc78ea0a535"
-					(reference "#PWR022")
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -6617,7 +6547,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 88.9 83.82 0)
+		(at 41.91 83.82 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -6626,7 +6556,7 @@
 		(fields_autoplaced yes)
 		(uuid "f934496e-b022-4ee4-87af-d4448ec9d585")
 		(property "Reference" "H2"
-			(at 91.44 81.2799 0)
+			(at 44.45 81.2799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6635,7 +6565,7 @@
 			)
 		)
 		(property "Value" "m2 mounting hole"
-			(at 91.44 83.8199 0)
+			(at 44.45 83.8199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6644,7 +6574,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad"
-			(at 88.9 83.82 0)
+			(at 41.91 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6653,7 +6583,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 88.9 83.82 0)
+			(at 41.91 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6662,7 +6592,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection"
-			(at 88.9 83.82 0)
+			(at 41.91 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6677,98 +6607,6 @@
 			(project "Powerline-USB-C"
 				(path "/63579326-1374-4d55-afd6-ecc78ea0a535"
 					(reference "H2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Powerline-USB-C:Eurorack 10pin Power Connector")
-		(at 64.77 72.39 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ff52dac5-3c4a-4bc1-89eb-34a7c509d756")
-		(property "Reference" "J3"
-			(at 64.77 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Eurorack 10pin Power Connector"
-			(at 64.77 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Powerline-USB-C:Eurorack shrouded 10 pin SMD header"
-			(at 64.77 84.836 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 64.77 83.566 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 64.77 82.042 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0237678d-589d-4475-a8fc-26956676e94a")
-		)
-		(pin "9"
-			(uuid "a1aa8ca9-3f84-4fbd-9c98-924e2ac072ea")
-		)
-		(pin "6"
-			(uuid "7525ec8e-280e-43af-92fa-0d85ac793335")
-		)
-		(pin "7"
-			(uuid "59a4c7ee-1535-4950-ab71-e4a611257398")
-		)
-		(pin "1"
-			(uuid "375dc6cf-de37-42d2-bd37-f7a229e198e1")
-		)
-		(pin "4"
-			(uuid "b5e2473f-5861-46ca-9f27-00d35735f66c")
-		)
-		(pin "10"
-			(uuid "179463cf-24c7-4b86-99c6-f144e45cfed7")
-		)
-		(pin "3"
-			(uuid "323b5dd9-e273-4dd8-9a06-eca9c3e3dbd8")
-		)
-		(pin "8"
-			(uuid "6c927ab0-dd2f-41a7-841a-542c6e2d11e7")
-		)
-		(pin "5"
-			(uuid "dd388fee-e3d9-457e-bb70-e69182f2d02c")
-		)
-		(instances
-			(project ""
-				(path "/63579326-1374-4d55-afd6-ecc78ea0a535"
-					(reference "J3")
 					(unit 1)
 				)
 			)
