@@ -32,4 +32,5 @@ You also need two M2 5mm standoffs and 4 M2 screws that fit the standoffs (max. 
 |U2, U3|N7912-1C|+/-12V regulators|
 |U4|N7805-1C|5V regulator|
 ## Build guide
+![Alt text](Powerline-USB-C/3D-Powerline-USB-C.png?raw=true "3D render")
 TODO
