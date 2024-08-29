@@ -32,5 +32,3 @@ You also need two M2 5mm standoffs and 4 M2 screws that fit the standoffs (max. 
 |U1|CH224K|The PD trigger IC|
 |U2, U3|N7912-1C|+/-12V regulators|
 |U4|N7805-1C|5V regulator|
-## Build guide
-TODO
