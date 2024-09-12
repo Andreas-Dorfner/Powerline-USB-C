@@ -9,11 +9,11 @@ The main PCB also includes a 3D render of the Frontpanel as a Footprint
 - -12V 300mA
 - 5V 1000mA
 ## Features
-Powerline uses the cheap and readily available CH224k IC to get 20V over USB-C PD. The power brick used should be able to supply at least 2A of current at that voltage (40W Charger and above should be fine).
+Powerline uses the cheap and readily available CH224k IC to get 20V over USB-C PD. The power brick should supply at least 2A of current at that voltage (40W Charger and above should be fine).
 The 20V then gets regulated to a dual +/-12V and 5V supply by two N7812-1C and an N7805-1C and can be accessed by one 16-pin Power header. You can also omit the 5V rail and solder a 10pin header if none of your modules need 5V.
 Powerline uses a single LED powered by the 12V rail to indicate power.
 The PCBs are designed to jlcpcbs 2 Layer design capabilities to be compatible with most cheap PCB services.
-## Parts List:
+## Parts List
 The only difficult-to-source parts are the USB-C connector and regulator ICs. I got both from Digikey.
 I also recommend sourcing the CH224k from a reputable supplier like LCSC to avoid broken parts.
 You also need two M2 5mm standoffs and 4 M2 screws that fit the standoffs (max. 4mm) to assemble the Module.
@@ -24,7 +24,7 @@ You also need two M2 5mm standoffs and 4 M2 screws that fit the standoffs (max. 
 |C2, C4, C6|1210 10uF 50V X7R|Input Cap for the regulator|
 |C3, C5, C7|1210 22uF 25V X7R|Output cap for the regulator|
 |D1|3mm LED|3mm radial LED with a nice color|
-|J1|Molex-2171780001|I selected this because of its very good availability. You can even look at the Molex website to see where there is stock!|
+|J1|Molex-2171780001|I selected this because of its excellent availability. You can even look at the Molex website to see where there is stock!|
 |J2|Power header|A 02x08 2.54mm pin spacing vertical through hole pin header, do yourself a favor and get a keyed one|
 |L1|1210 10uH|Look out for a rated current of above 600mA|
 |R1|0603 1k|Current limiting resistor for the CH224Ks Powersupply|
@@ -32,3 +32,6 @@ You also need two M2 5mm standoffs and 4 M2 screws that fit the standoffs (max. 
 |U1|CH224K|The PD trigger IC|
 |U2, U3|N7912-1C|+/-12V regulators|
 |U4|N7805-1C|5V regulator|
+## Build Guide
+TODO
+I still need to build the USB-C version of this power supply, so I cannot confirm that it is working fully. Currently, there seems to be an issue with the USB-C trigger section.
