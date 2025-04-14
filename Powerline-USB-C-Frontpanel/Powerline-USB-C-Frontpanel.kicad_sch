@@ -6,8 +6,8 @@
 	(paper "A5")
 	(title_block
 		(title "Powerline-USB-C-Frontpanel")
-		(date "2024-08-26")
-		(rev "0.1")
+		(date "2024-12-23")
+		(rev "0.3")
 	)
 	(lib_symbols
 		(symbol "Mechanical:MountingHole_Pad"

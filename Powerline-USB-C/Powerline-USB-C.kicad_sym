@@ -817,6 +817,121 @@
 			)
 		)
 	)
+	(symbol "HT7533-1"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 0 4.064 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "HT7533-1"
+			(at 0 2.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Powerline-USB-C:HT7533-1"
+			(at 0 7.366 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/Voltage-Regulators-Linear-Low-Drop-Out-LDO-Regulators_UMW-Youtai-Semiconductor-Co-Ltd-HT7533-1_C347186.html"
+			(at 0 9.398 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "3.3V LDO"
+			(at 0 11.176 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "HT7533-1_1_1"
+			(rectangle
+				(start -5.08 1.524)
+				(end 5.08 -5.08)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(pin power_in line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "VIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 7.62 0 180)
+				(length 2.54)
+				(name "VO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
 	(symbol "N7812-1C"
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -932,51 +1047,28 @@
 			)
 		)
 	)
-	(symbol "Vertical 6pin USB C connector"
-		(pin_names
-			(offset 0.254)
-		)
+	(symbol "USB-C"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "J"
-			(at 0 25.908 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "USB-C 6pin"
-			(at 0 23.622 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "Powerline-USB-C:6pin Vertical USB C connector"
-			(at 0 32.004 0)
+		(property "Reference" "U"
+			(at 0 15.494 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(italic yes)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail/2171780001?display=pdf"
-			(at 0 27.94 0)
+		(property "Value" "MC-802YC-H105"
+			(at 0 13.716 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(italic yes)
 				)
-				(hide yes)
 			)
 		)
-		(property "Description" "Vertical 6pin USB c connector"
-			(at 0 29.972 0)
+		(property "Footprint" "Powerline-USB-C:USB-C"
+			(at -0.254 -22.606 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -984,8 +1076,8 @@
 				(hide yes)
 			)
 		)
-		(property "ki_fp_filters" "CONN_217178-0001_MOL"
-			(at 0 0 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2211111000_Hanbo-Electronic-MC-802YC-H105_C3039301.pdf"
+			(at 0 -20.066 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -993,10 +1085,19 @@
 				(hide yes)
 			)
 		)
-		(symbol "Vertical 6pin USB C connector_1_1"
+		(property "Description" ""
+			(at 0 11.938 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "USB-C_1_1"
 			(rectangle
-				(start -3.048 10.16)
-				(end 2.54 -10.16)
+				(start -6.35 10.414)
+				(end 5.08 -10.16)
 				(stroke
 					(width 0)
 					(type default)
@@ -1005,35 +1106,17 @@
 					(type background)
 				)
 			)
-			(pin passive line
-				(at 7.62 -6.35 180)
-				(length 5.08)
-				(name "Shell"
+			(pin input line
+				(at -10.16 -6.35 0)
+				(length 3.81)
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at 7.62 -8.89 180)
-				(length 5.08)
-				(name "Shell"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "8"
+				(number "A1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1041,9 +1124,9 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 7.62 -3.81 180)
-				(length 5.08)
+			(pin input line
+				(at -10.16 -8.89 0)
+				(length 3.81)
 				(name "GND"
 					(effects
 						(font
@@ -1059,9 +1142,27 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 7.62 1.27 180)
-				(length 5.08)
+			(pin input line
+				(at -10.16 8.89 0)
+				(length 3.81)
+				(name "VBUS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 8.89 6.35 180)
+				(length 3.81)
 				(name "CC1"
 					(effects
 						(font
@@ -1077,9 +1178,45 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 7.62 8.89 180)
-				(length 5.08)
+			(pin input line
+				(at 8.89 -3.81 180)
+				(length 3.81)
+				(name "D+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 8.89 1.27 180)
+				(length 3.81)
+				(name "D-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "A7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 6.35 0)
+				(length 3.81)
 				(name "VBUS"
 					(effects
 						(font
@@ -1095,9 +1232,27 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 7.62 -1.27 180)
-				(length 5.08)
+			(pin input line
+				(at -10.16 -1.27 0)
+				(length 3.81)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 -3.81 0)
+				(length 3.81)
 				(name "GND"
 					(effects
 						(font
@@ -1113,9 +1268,27 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 7.62 3.81 180)
-				(length 5.08)
+			(pin input line
+				(at -10.16 3.81 0)
+				(length 3.81)
+				(name "VBUS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 8.89 3.81 180)
+				(length 3.81)
 				(name "CC2"
 					(effects
 						(font
@@ -1131,9 +1304,45 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 7.62 6.35 180)
-				(length 5.08)
+			(pin input line
+				(at 8.89 -6.35 180)
+				(length 3.81)
+				(name "D+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 8.89 -1.27 180)
+				(length 3.81)
+				(name "D-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "B7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -10.16 1.27 0)
+				(length 3.81)
 				(name "VBUS"
 					(effects
 						(font
@@ -1149,283 +1358,17 @@
 					)
 				)
 			)
-		)
-		(symbol "Vertical 6pin USB C connector_1_2"
-			(polyline
-				(pts
-					(xy 5.08 -15.24) (xy 12.7 -15.24)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 5.08 2.54) (xy 5.08 -15.24)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 -12.7) (xy 5.08 -12.7)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 -12.7) (xy 8.89 -13.5467)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 -12.7) (xy 8.89 -11.8533)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 -10.16) (xy 5.08 -10.16)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 -10.16) (xy 8.89 -11.0067)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 -10.16) (xy 8.89 -9.3133)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 -7.62) (xy 5.08 -7.62)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 -7.62) (xy 8.89 -8.4667)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 -7.62) (xy 8.89 -6.7733)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 -5.08) (xy 5.08 -5.08)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 -5.08) (xy 8.89 -5.9267)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 -5.08) (xy 8.89 -4.2333)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 -2.54) (xy 5.08 -2.54)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 -2.54) (xy 8.89 -3.3867)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 -2.54) (xy 8.89 -1.6933)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 0) (xy 5.08 0)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 0) (xy 8.89 -0.8467)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 7.62 0) (xy 8.89 0.8467)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 12.7 -15.24) (xy 12.7 2.54)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
-					(xy 12.7 2.54) (xy 5.08 2.54)
-				)
-				(stroke
-					(width 0.127)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(pin power_out line
-				(at 0 -5.08 0)
-				(length 5.08)
-				(name "GND"
+			(pin no_connect line
+				(at 17.78 -3.81 90)
+				(length 3.81) hide
+				(name "Shield"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "A12"
+				(number "S1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1433,35 +1376,17 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 0 0 0)
-				(length 5.08)
-				(name "CC1"
+			(pin no_connect line
+				(at 20.32 -3.81 90)
+				(length 3.81) hide
+				(name "S2"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "A5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 -2.54 0)
-				(length 5.08)
-				(name "VBUS"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "A9"
+				(number "S2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1469,35 +1394,17 @@
 					)
 				)
 			)
-			(pin power_out line
-				(at 0 -12.7 0)
-				(length 5.08)
-				(name "GND"
+			(pin no_connect line
+				(at 22.86 -3.81 90)
+				(length 3.81) hide
+				(name "Shield"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "B12"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 0 -7.62 0)
-				(length 5.08)
-				(name "CC2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "B5"
+				(number "S3"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -1505,17 +1412,17 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 0 -10.16 0)
-				(length 5.08)
-				(name "VBUS"
+			(pin no_connect line
+				(at 25.4 -3.81 90)
+				(length 3.81) hide
+				(name "Shield"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "B9"
+				(number "S4"
 					(effects
 						(font
 							(size 1.27 1.27)
