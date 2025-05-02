@@ -2692,7 +2692,7 @@
 		)
 		(uuid "9279bc3b-dc3d-4a67-acf3-add8f555b675")
 	)
-	(text "25V"
+	(text "50V"
 		(exclude_from_sim no)
 		(at 185.42 31.75 0)
 		(effects
@@ -2702,7 +2702,7 @@
 		)
 		(uuid "e00e30a4-7c23-46d5-b118-60c1ce317db4")
 	)
-	(text "25V"
+	(text "50V"
 		(exclude_from_sim no)
 		(at 158.75 31.75 0)
 		(effects

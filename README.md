@@ -1,4 +1,4 @@
-# Powerline-USB-C
+ # Powerline-USB-C
 Powerline is a small 3HP Front Entry USB C Eurorack power supply.
 ![Alt text](Powerline-USB-C/3D-Powerline-USB-C.png?raw=true "3D render")
 ## Repository Layout
@@ -25,13 +25,14 @@ You also need two M2 5mm standoffs and 4 M2 screws that fit the standoffs (max. 
 |C3, C5, C7|1210 22uF 25V X7R|Output cap for the regulator|
 |D1|3mm LED|3mm radial LED with a nice color|
 |J1|MC-802YC-H105|Female USB-C connector|
-|J2|Power header|A 02x08 2.54mm pin spacing vertical through hole pin header, do yourself a favor and get a keyed one|
+|J2|Power header|A 02x08 2.54mm pin spacing vertical through hole pin header|
 |L1|1210 10uH|Look out for a rated current of above 600mA|
 |R1|0603 5k1|Current limiting resistor for the LED: if it's too bright, pick a higher resistance|
 |R2|0604 10k|VBUS sense resistor|
 |U1|CH224K|The PD trigger IC|
 |U2, U3|N7912-1C|+/-12V regulators|
 |U4|N7805-1C|5V regulator|
+|U5|HT7533-1|3.3V regulator|
+|Standoffs|m2 5-7.5mm|You need 2 Standoffs and 4 screws to mount the Module to its front plate
 ## Build Guide
-TODO
-I still need to build the USB-C version of this power supply, so I cannot confirm that it is working fully. Currently, there seems to be an issue with the USB-C trigger section.
+The PCB doesn't include any Thermal reliefs so that soldering can be tricky with a weak iron or small tip. I did everything with a 60W and 4mm Bevel Tip on a TS100 with extra Flux. You do not need additional equipment as the CH224K is solderable from the bottom. I used 7.5mm Standoffs, which protects the USB-C connector nicely. I would recommend soldering the USB-C connector last.
